@@ -15,11 +15,21 @@
   --fundo-card: #ffffff;
 }
 
+body.escuro {
+  --fundo-principal: #222222;
+  --texto: #e0e0e0;
+  --texto-inverso: #333333;
+  --destaque: #008cff;
+  --destaque-inverso: #1e00a5;
+  --fundo-card: #444444;
+}
+
 body {
   background-color: var(--fundo-principal);
   color: var(--texto);
   font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.5em;
+  transition: background-color .2s, color .2s;
 }
 
 header {
@@ -265,7 +275,7 @@ article#video h2 {
 footer {
   background-color: var(--destaque);
   text-align: center;
-  padding: 15px;
+  padding: 10px;
 }
 
 footer > p {
